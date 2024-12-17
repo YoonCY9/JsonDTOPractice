@@ -8,6 +8,7 @@ public record RestaurantReview(String restaurantName,
                                String visitDate,
                                String review,
                                List<String> photos,
-                               MenuInformation menu)
-                                                        {
+                               MenuInformation menu) {
+    public record MenuInformation(String name, int price) {
+    }
 }
